@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">University Student Portal</h1>
+
+            <nav>
+                <ul class="flex gap-6 text-sm">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto w-full p-6 my-10 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <section class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-lg font-bold mb-4 border-b pb-2">
+                    Student Profile
+                </h2>
+
+                <div class="space-y-3 text-sm">
+                    <div class="flex justify-between border-b py-2">
+                        <span>Degree:</span>
+                        <span>BS Software Engineering</span>
+                    </div>
+
+                    <div class="flex justify-between border-b py-2">
+                        <span>Semester:</span>
+                        <span>6th Semester</span>
+                    </div>
+
+                    <div class="flex justify-between border-b py-2">
+                        <span>Campus:</span>
+                        <span>Main Campus</span>
+                    </div>
+
+                    <div class="flex justify-between py-2">
+                        <span>Status:</span>
+                        <span class="bg-gray-200 px-2 rounded">Active</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-lg font-bold mb-4 border-b pb-2">
+                    Update Information
+                </h2>
+
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm mb-1">Student Name</label>
+                        <input type="text"
+                            class="w-full p-2 border rounded"
+                            placeholder="e.g. Mehak Altaf">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-1">Email Address</label>
+                        <input type="email"
+                            class="w-full p-2 border rounded"
+                            placeholder="e.g. mehak@example.com">
+                    </div>
+
+                    <button type="button"
+                        class="w-full bg-gray-900 text-white p-2 rounded">
+                        Submit Details
+                    </button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center p-4 text-xs">
+        <p>&copy; 2026 University Student Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
